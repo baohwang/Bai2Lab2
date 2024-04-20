@@ -43,6 +43,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,6 +94,10 @@
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(237, 22);
             this.txtSoLuong.TabIndex = 5;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // btnThem
             // 
@@ -165,11 +170,21 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(210, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 377);
+            this.ClientSize = new System.Drawing.Size(540, 400);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnXoa);
@@ -205,6 +220,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button button1;
     }
 }
 

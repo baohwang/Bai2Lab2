@@ -63,5 +63,10 @@ namespace Bai2Lab2
         {
             Application.Exit();
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
     }
 }
